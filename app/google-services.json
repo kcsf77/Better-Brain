@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "589099601989",
+    "project_id": "better-brain",
+    "storage_bucket": "better-brain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589099601989:android:046c618d2017dc2a81932c",
+        "android_client_info": {
+          "package_name": "com.example.betterbrain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589099601989-8frvbkjhsqd208d9rrnjvcnqd2d2kede.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjtDxfkmk6BU7m0sAHxz1DldYa-17MI88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589099601989-8frvbkjhsqd208d9rrnjvcnqd2d2kede.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

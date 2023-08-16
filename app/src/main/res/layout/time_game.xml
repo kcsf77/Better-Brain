@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/timeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list2_1"
+    tools:context=".TimeGame">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/b_start"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/b_main"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="81dp"
+            android:backgroundTint="#A4635EAD"
+            android:text="START"
+            app:cornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/b_main"
+            app:layout_constraintStart_toStartOf="@+id/b_main"
+            app:layout_constraintTop_toBottomOf="@+id/b_main" />
+
+        <Button
+            android:id="@+id/b_main"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_above="@id/b_start"
+            android:layout_below="@id/tv_info"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="56dp"
+            android:backgroundTint="@color/light_purple"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            app:cornerRadius="500dp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_info"
+            app:layout_constraintStart_toStartOf="@+id/tv_info"
+            app:layout_constraintTop_toBottomOf="@+id/tv_info" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="56dp"
+            android:text="BEST TIME:"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="160dp"
+            android:scaleX="2.2"
+            android:scaleY="2.2"
+            android:text="REACTION TIME GAME"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
+
+
+

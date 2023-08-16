@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LoginActLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list1"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:layout_marginBottom="50dp">
+
+
+        <TextView
+            android:id="@+id/Regtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-black"
+            android:text="LOGIN"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/LgName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Regtxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="72dp"
+            android:ems="10"
+            android:hint="Email:"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/LgPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LgName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="Password:"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF" />
+
+
+        <Button
+            android:id="@+id/Loginbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/or"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:backgroundTint="#00292828"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:cornerRadius="30dp" />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RegBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="━━ OR ━━"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/RegBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LgPassword"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp"
+            android:background="@null"
+            android:backgroundTint="#00292828"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:text="Log in"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:cornerRadius="30dp" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+
+
+

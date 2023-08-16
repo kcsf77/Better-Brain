@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wordLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list2_2"
+    tools:context=".WordGame">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/AnagramTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="cursive"
+            android:text="Anagram Game"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/wg_highScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AnagramTxt"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#FFFFFF"
+            android:text="HIGH SCORE: "
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/wordTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wg_highScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wordTimer"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/score"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="monospace"/>
+
+
+        <TextView
+            android:id="@+id/theWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/info2"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:text=""
+            android:textSize="30sp"
+            android:background="#7A7AA7DD"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <EditText
+            android:id="@+id/answerInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/theWord"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:ems="7"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:hint="Enter the word"
+            android:inputType="textPersonName"
+            android:textSize="40sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/answerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answerInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00292828"
+            android:fontFamily="sans-serif-condensed"
+            android:text="CHECK"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/newBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/answerInput"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#00292828"
+            android:fontFamily="sans-serif-condensed"
+            android:text="NEW WORD"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/startGameBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#00292828"
+            android:text="Start Game"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+

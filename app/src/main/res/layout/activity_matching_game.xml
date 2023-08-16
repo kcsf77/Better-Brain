@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchingGameActivity"
+    android:id="@+id/matching_menu_layout"
+    android:background="@drawable/gradient_list_matching">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mg_highScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#00292828"
+            android:text="HIGHEST LEVEL:" />
+
+
+        <TextView
+            android:id="@+id/timerId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mg_highScore"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/mg_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/timerId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Level"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/mg_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mg_level"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="" />
+
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_below="@+id/mg_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:layout_centerHorizontal="true"
+            tools:context=".MatchingGameActivity">
+        </GridLayout>
+
+        <Button
+            android:id="@+id/retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#8ADD8686"
+            android:text="Play again"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:cornerRadius="2dp" />
+
+        <Button
+            android:id="@+id/nextSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:background="@null"
+            android:backgroundTint="#00292828"
+            android:text="next"
+            android:textColor="@color/teal_700"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</FrameLayout>
